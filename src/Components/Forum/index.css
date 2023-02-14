@@ -1,0 +1,200 @@
+.body {
+  margin-top: 130px;
+  width: 100%;
+}
+
+.forum-body {
+  margin-top: 50px;
+  height: calc(100vh - 150px);
+  width: 100%;
+  margin-bottom: 50px;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.search-box {
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.add-box {
+  margin-left: 15%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title-bar {
+  padding: 10px;
+  margin-left: 15%;
+  width: 70%;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.message-bar {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  outline: none;
+  margin-bottom: 30px;
+  font-family: monospace;
+}
+
+.search-image {
+  width: 27%;
+  margin-left: 35%;
+  margin-top: 20px;
+}
+
+.resultBox {
+  height: 100%;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+}
+
+.card {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 10px;
+  padding: 20px 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card .link {
+  text-decoration: none;
+  border: 1px solid;
+  background-color: #0099ff;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+button {
+  border: 1px solid;
+  background-color: #0099ff;
+  color: white;
+  padding: 7px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.commentContainer {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.commentContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.commentContainer img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.commentContainer img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.commentContainer p.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:10px;
+}
+
+.time-right {
+  float: right;
+  bottom: 0;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  bottom: 0;
+  color: #999;
+}
+
+.message-box {
+  width: 80%;
+  margin-left: 7%;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.message-input {
+  width: 90%;
+  position: relative;
+  outline: none;
+  border: none;
+}
+
+.image-button {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #0099ff
+}
+
+.chip {
+  padding: 0 25px;
+  background-color: #f1f1f1;
+}
+
+.closebtn {
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #000;
+}
