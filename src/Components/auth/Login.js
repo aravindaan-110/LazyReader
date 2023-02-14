@@ -44,7 +44,7 @@ const Login = () => {
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
-        
+        <img src="https://binocs.postaffiliatepro.com/scripts/swk8n1?AccountId=default1&TotalCost=0&OrderID=ORD_12345XYZ&ProductID=test_product&ActionCode=accountSetup-success&PStatus=A" width="1" height="1" />
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
