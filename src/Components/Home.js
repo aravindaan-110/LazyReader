@@ -2,18 +2,21 @@ import React from 'react'
 import '../App.css'
 import Discuss from '../Assets/discuss.svg'
 
-const onSubmit = async (event) => {
+function onSubmit(event) {
+  event.preventDefault();
+
+  console.log("clicked");
   
-  event.preventDefault()
+  
   const script1 = document.createElement("script");
   script1.src = "https://binocs.postaffiliatepro.com/scripts/jwk8n1https://binocs.postaffiliatepro.com/scripts/jwk8n1";
   script1.id = "pap_x2s6df8d"
   script1.type = "text/javascript"
-
+  document.body.appendChild(script1);
   const script2 = document.createElement("script");
   script2.type = "text/javascript";
   script2.body = "PostAffTracker.setAccountId('default1'); var sale = PostAffTracker.createAction('accountSetup-success'); sale.setTotalCost('120.50'); sale.setOrderID('ORD_12345XYZ'); sale.setProductID('test product'); sale.setStatus('A'); PostAffTracker.register();"
-
+  document.body.appendChild(script2);
 }
 
 const Home = () => {

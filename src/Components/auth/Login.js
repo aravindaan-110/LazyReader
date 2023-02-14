@@ -18,6 +18,7 @@ const Login = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault()
+    console.log("Clicked");
 
      
 
@@ -59,7 +60,7 @@ const Login = () => {
             <input type="password" name='password' onChange={handleChange} placeholder="Password" />
           </div>
           <p style={{ margin: '10px 0' }}><a href='/' style={{ textDecoration: 'none' }}>Forgot password?</a></p>
-          <input type="submit" onClick={onSubmit} value="Login" className="btn solid" />
+          <input type="submit" onClick={{onSubmit}} value="Login" className="btn solid" />
           <p className="social-text">
             Do not have an account?
             <a href='/register' style={{ textDecoration: 'none', cursor: 'pointer', color: '#0099ff' }}> Sign Up</a>
