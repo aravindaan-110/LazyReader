@@ -19,6 +19,8 @@ const Login = () => {
   const onSubmit = async (event) => {
     event.preventDefault()
 
+     
+
     const data = {
       email,
       password
@@ -44,18 +46,6 @@ const Login = () => {
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
-        <script type="text/javascript" id="pap_x2s6df8d" src="https://binocs.postaffiliatepro.com/scripts/jwk8n1"></script>
-
-        <script type="text/javascript">
-          PostAffTracker.setAccountId('default1');
-
-          var sale = PostAffTracker.createAction('accountSetup-success');
-          sale.setTotalCost('120.50');
-          sale.setOrderID('ORD_12345XYZ');
-          sale.setProductID('test product');
-          sale.setStatus('A');
-
-          PostAffTracker.register(); </script>
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
@@ -77,6 +67,7 @@ const Login = () => {
         </form>
       </div>
       <img alt='wave' src={wave} className='login-wave' />
+      
     </div>
   )
 }
