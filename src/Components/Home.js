@@ -10,7 +10,7 @@ function onSubmit(event) {
   
   const script1 = document.createElement("script");
   script1.type = "text/javascript";
-  script1.id = "pap_x2s6df8d"
+  script1.id = "pap_x2s6df8d";
   script1.src = "https://binocs.postaffiliatepro.com/scripts/jwk8n1";
   
   
