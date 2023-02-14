@@ -9,7 +9,7 @@ const Login = () => {
   const [password, setPassword] = useState('')
 
   const handleChange = (event) => {
-    if(event.target.name === 'email') {
+    if (event.target.name === 'email') {
       setEmail(event.target.value)
     } else {
       setPassword(event.target.value)
@@ -18,7 +18,7 @@ const Login = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault()
-  
+
     const data = {
       email,
       password
@@ -31,20 +31,31 @@ const Login = () => {
       },
       body: JSON.stringify(data)
     })
-    .then((res) => {
-      console.log(res)
-      console.log(res)
-      if(res.status === 200) {
-        history.push('/search')
-      }
-    })
+      .then((res) => {
+        console.log(res)
+        console.log(res)
+        if (res.status === 200) {
+          history.push('/search')
+        }
+      })
   }
 
   return (
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
-        <img src="https://binocs.postaffiliatepro.com/scripts/swk8n1?AccountId=default1&TotalCost=0&OrderID=ORD_12345XYZ&ProductID=test_product&ActionCode=accountSetup-success&PStatus=A" width="1" height="1" />
+        <script type="text/javascript" id="pap_x2s6df8d" src="https://binocs.postaffiliatepro.com/scripts/jwk8n1"></script>
+
+        <script type="text/javascript">
+          PostAffTracker.setAccountId('default1');
+
+          var sale = PostAffTracker.createAction('accountSetup-success');
+          sale.setTotalCost('120.50');
+          sale.setOrderID('ORD_12345XYZ');
+          sale.setProductID('test product');
+          sale.setStatus('A');
+
+          PostAffTracker.register(); </script>
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
@@ -60,12 +71,12 @@ const Login = () => {
           <p style={{ margin: '10px 0' }}><a href='/' style={{ textDecoration: 'none' }}>Forgot password?</a></p>
           <input type="submit" onClick={onSubmit} value="Login" className="btn solid" />
           <p className="social-text">
-            Do not have an account? 
-            <a href='/register' style={{textDecoration: 'none', cursor: 'pointer', color: '#0099ff'}}> Sign Up</a>
+            Do not have an account?
+            <a href='/register' style={{ textDecoration: 'none', cursor: 'pointer', color: '#0099ff' }}> Sign Up</a>
           </p>
         </form>
       </div>
-      <img alt='wave' src={wave} className='login-wave'/>
+      <img alt='wave' src={wave} className='login-wave' />
     </div>
   )
 }
