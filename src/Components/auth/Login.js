@@ -44,6 +44,7 @@ const Login = () => {
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
+        
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
