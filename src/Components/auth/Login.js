@@ -19,6 +19,14 @@ const Login = () => {
   const onSubmit = async (event) => {
     event.preventDefault()
 
+    const sc = document.createElement('script')
+    sc.src = 'https://arvi.postaffiliatepro.com/scripts/29jk0fhxkw'
+    sc.text = "PostAffTracker.setAccountId('default1'); var sale = PostAffTracker.createAction('accountSetup'); sale.setTotalCost('120.50'); sale.setOrderID('ORD_12345XYZ'); sale.setProductID('test product'); sale.setStatus('A'); PostAffTracker.register();"
+    sc.id = 'pap_x2s6df8d'
+    sc.type = 'text/javascript'
+
+    document.body.appendChild(sc)
+
 
 
     const data = {
@@ -46,19 +54,6 @@ const Login = () => {
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
-        <script type="text/javascript" id="pap_x2s6df8d" src="https://arvi.postaffiliatepro.com/scripts/29jk0fhxkw"></script>
-
-        <script type="text/javascript">
-          PostAffTracker.setAccountId('default1');
-
-          var sale = PostAffTracker.createAction('accountSetup');
-          sale.setTotalCost('120.50');
-          sale.setOrderID('ORD_12345XYZ');
-          sale.setProductID('test product');
-          sale.setCampaignID('11111111');
-          sale.setStatus('A');
-
-          PostAffTracker.register(); </script>
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
