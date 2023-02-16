@@ -4,15 +4,8 @@ import Discuss from '../Assets/discuss.svg'
 
 const onSubmit = async (event) => {
   
-  event.preventDefault()
-  const script1 = document.createElement("script");
-  script1.src = "https://binocs.postaffiliatepro.com/scripts/jwk8n1https://binocs.postaffiliatepro.com/scripts/jwk8n1";
-  script1.id = "pap_x2s6df8d"
-  script1.type = "text/javascript"
-
-  const script2 = document.createElement("script");
-  script2.type = "text/javascript";
-  script2.body = "PostAffTracker.setAccountId('default1'); var sale = PostAffTracker.createAction('accountSetup-success'); sale.setTotalCost('120.50'); sale.setOrderID('ORD_12345XYZ'); sale.setProductID('test product'); sale.setStatus('A'); PostAffTracker.register();"
+// redirect to the login page
+  window.location.href = '/login'
 
 }
 
@@ -28,7 +21,7 @@ const Home = () => {
           <h1>A one-stop solution to all your academic problems!</h1>
           <h3>Online materials needed for your courses are available here.</h3>
           <div>
-            <a className='home-link' style={{ color: 'white' }} onClick= {onSubmit}  href='/login'>Login</a>
+            <a className='home-link' style={{ color: 'white' }} href='/login'>Login</a>
             <a className='home-link' href='/register' style={{ marginLeft: '30px', color: 'white' }}>Register</a>
           </div>
         </div>

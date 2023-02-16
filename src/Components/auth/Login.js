@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import wave from '../../Assets/login-wave.svg'
 import './index.css'
@@ -7,6 +7,22 @@ const Login = () => {
   const history = useHistory()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+
+  useEffect(() => {
+
+    const oldSc = document.getElementById('pap_x2s6df8d')
+    if (oldSc) {
+      document.body.removeChild(oldSc)
+    }
+
+    const sc = document.createElement('script')
+    sc.src = 'https://arvi.postaffiliatepro.com/scripts/29jk0fhxkw'
+    sc.text = "PostAffTracker.setAccountId('default1'); var sale = PostAffTracker.createAction('accountSetup'); sale.setTotalCost('120.50'); sale.setOrderID('ORD_12345XYZ'); sale.setProductID('test product'); sale.setStatus('A'); PostAffTracker.register();"
+    sc.id = 'pap_x2s6df8d'
+    sc.type = 'text/javascript'
+
+    document.body.appendChild(sc)
+  }, [])
 
   const handleChange = (event) => {
     if (event.target.name === 'email') {
@@ -18,16 +34,6 @@ const Login = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault()
-
-    const sc = document.createElement('script')
-    sc.src = 'https://arvi.postaffiliatepro.com/scripts/29jk0fhxkw'
-    sc.text = "PostAffTracker.setAccountId('default1'); var sale = PostAffTracker.createAction('accountSetup'); sale.setTotalCost('120.50'); sale.setOrderID('ORD_12345XYZ'); sale.setProductID('test product'); sale.setStatus('A'); PostAffTracker.register();"
-    sc.id = 'pap_x2s6df8d'
-    sc.type = 'text/javascript'
-
-    document.body.appendChild(sc)
-
-
 
     const data = {
       email,
