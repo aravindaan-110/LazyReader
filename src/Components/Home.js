@@ -2,12 +2,6 @@ import React from 'react'
 import '../App.css'
 import Discuss from '../Assets/discuss.svg'
 
-const onSubmit = async (event) => {
-  
-// redirect to the login page
-  window.location.href = '/login'
-
-}
 
 const Home = () => {
   return (
