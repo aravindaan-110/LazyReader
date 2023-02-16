@@ -18,9 +18,8 @@ const Login = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault()
-    console.log("Clicked");
 
-     
+
 
     const data = {
       email,
@@ -47,6 +46,19 @@ const Login = () => {
     <div>
       <div className='login-header'>
         <h1 style={{ color: '#0099ff' }} className='title'>Lazy Reader</h1>
+        <script type="text/javascript" id="pap_x2s6df8d" src="https://arvi.postaffiliatepro.com/scripts/29jk0fhxkw"></script>
+
+        <script type="text/javascript">
+          PostAffTracker.setAccountId('default1');
+
+          var sale = PostAffTracker.createAction('accountSetup');
+          sale.setTotalCost('120.50');
+          sale.setOrderID('ORD_12345XYZ');
+          sale.setProductID('test product');
+          sale.setCampaignID('11111111');
+          sale.setStatus('A');
+
+          PostAffTracker.register(); </script>
       </div>
       <div style={{ marginTop: '50px' }}>
         <form action="/search" className="sign-in-form">
@@ -60,7 +72,7 @@ const Login = () => {
             <input type="password" name='password' onChange={handleChange} placeholder="Password" />
           </div>
           <p style={{ margin: '10px 0' }}><a href='/' style={{ textDecoration: 'none' }}>Forgot password?</a></p>
-          <input type="submit" onClick={{onSubmit}} value="Login" className="btn solid" />
+          <input type="submit" onClick={onSubmit} value="Login" className="btn solid" />
           <p className="social-text">
             Do not have an account?
             <a href='/register' style={{ textDecoration: 'none', cursor: 'pointer', color: '#0099ff' }}> Sign Up</a>
@@ -68,7 +80,7 @@ const Login = () => {
         </form>
       </div>
       <img alt='wave' src={wave} className='login-wave' />
-      
+
     </div>
   )
 }
